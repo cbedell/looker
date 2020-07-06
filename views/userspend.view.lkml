@@ -32,6 +32,11 @@ view: userspend {
     sql: ${TABLE}."stringtransactiondate" ;;
   }
 
+  dimension: date {
+    type: date
+    sql:  ${TABLE}."stringtransactiondate" ;;
+  }
+
   dimension: userid {
     type: string
     sql: ${TABLE}."userid" ;;
