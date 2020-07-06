@@ -34,7 +34,7 @@ view: userspend {
 
   dimension: date {
     type: date
-    sql:  ${TABLE}."stringtransactiondate" ;;
+    sql: to_date(${TABLE}."stringtransactiondate",'YYYY-MM-DD') ;;
   }
 
   dimension: userid {
